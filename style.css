@@ -1,8 +1,34 @@
-/* Reset default margin/padding */
 body,
 html {
     margin: 0;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ToDo:delete this */
+.body-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section-title {
+    color: #525f7f;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 80px
+}
+
+.section-title:after {
+    content: " ";
+    border: 4px solid #747fe0;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 50px
 }
 
 /* =============== PRINCIPAL =============== */
@@ -10,12 +36,11 @@ html {
 .principal h2 {
     font-size: 4.5rem;
     color: green;
+    /* ToDo:change font */
     font-family: Monaco, Consolas, Lucida Console, monospace;
-
 }
 
 .principal-description {
-    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
     font-weight: 200;
     font-size: 1.3em;
     line-height: 40px;
@@ -89,12 +114,8 @@ html {
 
 /* =============== END PRINCIPAL =============== */
 
+
 /* =============== ABOUT ME =============== */
-
-/* =============== END ABOUT ME =============== */
-
-
-
 
 .about-me {
     padding: 50px 0;
@@ -102,43 +123,27 @@ html {
 
 .about-text {
     text-align: center;
-    /* Adjust alignment as needed */
 }
 
 .about-text h2 {
     font-size: 2em;
-    /* Adjust header font size */
     margin-bottom: 20px;
-    /* Add spacing between header and paragraph */
 }
 
 .about-text p {
-    font-size: 1.1em;
-    /* Adjust paragraph font size */
-    line-height: 1.6;
-    /* Adjust line height if needed */
+    font-size: 1.1rem;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-weight: 200;
+    font-size: 1.3em;
+    line-height: 40px;
+    color: #525f7f;
+    margin: 80px 0;
 }
 
+/* =============== END ABOUT ME =============== */
 
 
-.icon-list {
-    display: flex;
-    justify-content: center;
-    /* Align icons in the center */
-    font-size: 3em;
-    /* Adjust icon size */
-    margin-top: 20px;
-    /* Add spacing between header and icons */
-}
-
-.icon-list i {
-    margin: 0 10px;
-    /* Adjust spacing between icons */
-}
-
-/* Adjust alignment if needed */
 /* =============== PROJECTS =============== */
-
 
 .project-card {
     position: relative;
@@ -232,65 +237,18 @@ html {
 
 /* =============== END PROJECTS =============== */
 
-/* =============== ABOUT ME =============== */
 
-.about-text p {
-    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
-    font-weight: 200;
-    font-size: 1.3em;
-    line-height: 40px;
-    color: #525f7f;
-    margin: 80px 0;
-}
-
-
-
-/* =============== END ABOUT ME =============== */
-
-
-/* ToDo:Change values */
-.body-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-
-/* .project-card img {
-    width: 25%;
-    max-height: 100%; 
-  } */
-
-
-.section-title {
-    color: #525f7f;
-    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
-    font-weight: 500;
-    font-size: 1.5em;
-    text-align: center;
-    padding-top: 50px;
-    margin-top: 50px;
-    margin-bottom: 80px
-}
-
-.section-title:after {
-    content: " ";
-    border: 4px solid #747fe0;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    width: 50px
-}
 /* =============== SKILLS=============== */
+
 .skills-container {
     display: flex;
-    justify-content: space-between; 
-    /* justify-content: space-around;  */
+    justify-content: space-between;
 }
 
 .skill-card {
-    flex: 1; 
-    box-sizing: border-box; 
-    margin-bottom: 0; 
+    flex: 1;
+    box-sizing: border-box;
+    margin-bottom: 0;
     margin-right: 60px;
     border: 1px solid #ccc;
     padding: 20px;
@@ -310,13 +268,16 @@ html {
 }
 
 .skill-item span {
-    font-size: 1.2em;
+    font-size: 1.3rem;
+    flex: 1;
     color: #525f7f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .skill-card:last-child {
     margin-right: 0;
 }
+
 .skill-card h3 {
     text-align: center;
     font-weight: 500;
@@ -325,7 +286,26 @@ html {
     color: #525f7f;
     margin-top: 0;
     margin-bottom: 35px;
-    
+
+}
+
+.skill-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.star-color {
+    color: #fbc634 !important;
+}
+
+.skill-stars i {
+    color: #cecece;
+    margin-right: 2px;
+}
+
+.skill-stars {
+    font-size: 18px;
 }
 
 /* =============== END SKILLS =============== */
