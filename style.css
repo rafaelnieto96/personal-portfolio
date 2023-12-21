@@ -32,6 +32,39 @@ html {
     width: 50px
 }
 
+/* =============== EFFECTS =============== */
+
+@keyframes cursor-blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blinking-cursor {
+    animation: cursor-blink 1s step-end infinite;
+}
+
+
+@keyframes rectangle-blink {
+    50% {
+        background-color: transparent;
+    }
+}
+
+.blinking-rectangle {
+    display: inline-block;
+    width: 2rem;
+    height: 4.6rem;
+    background-color: green;
+    animation: rectangle-blink 1s step-end infinite;
+    margin-left: 10px;
+    vertical-align: -0.5rem;
+
+}
+
+/* =============== END EFFECTS =============== */
+
+
 /* =============== PRINCIPAL =============== */
 
 .principal h2 {
@@ -103,13 +136,15 @@ html {
     margin-bottom: 0;
 }
 
-.output-lane a, .principal-description a {
+.output-lane a,
+.principal-description a {
     color: lightblue;
     text-decoration: none;
 }
 
-.output-lane a:hover, principal-description a:hover {
-    /* ToDo: make line cool */
+.output-lane a:hover,
+.principal-description a:hover {
+    /* ToDo: change the hover of the principal description */
     text-decoration: underline;
 }
 
