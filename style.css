@@ -1,5 +1,4 @@
-body,
-html {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
@@ -88,7 +87,7 @@ html {
     border-radius: 8px;
     margin-top: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 100px rgba(50, 50, 93, 0.15), 0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -169,13 +168,16 @@ html {
     font-size: 1.3em;
     line-height: 40px;
     color: #525f7f;
-    margin: 80px 0;
 }
 
 /* =============== END ABOUT ME =============== */
 
 
 /* =============== PROJECTS =============== */
+
+.projects {
+    padding-bottom: 50px;
+}
 
 .project-card {
     position: relative;
@@ -272,6 +274,10 @@ html {
 
 /* =============== SKILLS=============== */
 
+.skills {
+    padding-bottom: 100px;
+}
+
 .skills-container {
     display: flex;
     justify-content: space-between;
@@ -346,10 +352,8 @@ html {
 /* =============== NAVBAR =============== */
 
 .navbar {
-    z-index: 1000;
     display: flex;
     justify-content: flex-end;
-    margin: 0 auto;
     margin-top: 40px;
 }
 
@@ -366,20 +370,22 @@ html {
 .navbar a {
     text-decoration: none;
     font-size: 20px;
-    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
     color: inherit;
-    backface-visibility: hidden;
 }
 
 .navbar a:hover {
     text-decoration: none;
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 /* =============== END NAVBAR =============== */
+
+
+/* =============== RESPONSIVE =============== */
+
 @media (max-width:767px) {
     .navbar {
         width: 75%;
@@ -447,3 +453,62 @@ html {
         font-size: 0.95rem;
     }
 }
+
+/* =============== END RESPONSIVE =============== */
+
+
+/* =============== CONTACT =============== */
+
+.contact {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 250px;
+}
+
+.contact-links span:not(:last-child) {
+    margin-right: 10px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+    color: inherit;
+}
+
+.contact-links a:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.contact-links span:after {
+    content: "||";
+    color: #525f7f;
+    margin: 0 30px;
+}
+
+.contact-links span:nth-child(3):after {
+    content: "";
+    margin: 0;
+}
+
+/* =============== END CONTACT =============== */
+
+
+/* =============== FOOTER =============== */
+
+footer {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+    font-size: .75em;
+}
+
+/* =============== END FOOTER =============== */
