@@ -1,3 +1,8 @@
+:root {
+    --electric-green: #00FF00;
+    --lighter-color: #7FFF7F;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,10 +11,24 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 10px;
+    
+    background: 
+        linear-gradient(to top, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
+        linear-gradient(to bottom, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
+        linear-gradient(to left, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
+        linear-gradient(to right, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
+        #000000;
+        background-repeat: no-repeat;
+
+        /* background: linear-gradient(71deg, #0d1212, #3da077, #0d1212); */
+        
+    background-size: 100% 20px, 100% 20px, 20px 100%, 20px 100%;
+
+    background-position: top, bottom, left, right, center;
 }
 
 .section-title {
-    color: #525f7f;
+    color: var(--electric-green);
     font-weight: 500;
     text-align: center;
     padding-top: 50px;
@@ -67,7 +86,7 @@ body {
 
 .principal h2 {
     font-size: 4.8rem;
-    color: green;
+    color: var(--electric-green);
     font-family: monospace;
     font-family: inherit;
     font-weight: normal;
@@ -77,7 +96,7 @@ body {
     font-weight: 200;
     font-size: 1.3em;
     line-height: 40px;
-    color: #525f7f;
+    color: var(--lighter-color);
     margin: 80px 0;
 }
 
@@ -167,7 +186,7 @@ body {
     font-weight: 200;
     font-size: 1.3em;
     line-height: 40px;
-    color: #525f7f;
+    color: var(--lighter-color);
 }
 
 /* =============== END ABOUT ME =============== */
@@ -209,7 +228,7 @@ body {
     font-weight: 500;
     font-size: 1.8em;
     line-height: 38px;
-    color: #525f7f;
+    color: var(--lighter-color);
     margin-top: 0;
     margin-bottom: 35px;
 }
@@ -217,7 +236,7 @@ body {
 .project-content p {
     margin-bottom: 30px;
     line-height: 27px;
-    color: #525f7f;
+    color: var(--lighter-color);
 }
 
 .project-skills {
@@ -233,7 +252,7 @@ body {
     margin-bottom: 10px;
     font-family: Camphor, Open Sans, Segoe UI, sans-serif;
     font-size: .85em;
-    color: #525f7f;
+    color: var(--lighter-color);
 }
 
 .project-buttons {
@@ -308,7 +327,7 @@ body {
 .skill-item span {
     font-size: 1.3rem;
     flex: 1;
-    color: #525f7f;
+    color: var(--lighter-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -321,7 +340,7 @@ body {
     font-weight: 500;
     font-size: 1.8em;
     line-height: 38px;
-    color: #525f7f;
+    color: var(--lighter-color);
     margin-top: 0;
     margin-bottom: 35px;
 
@@ -405,7 +424,7 @@ body {
         font-weight: 200;
         font-size: 1.2em;
         line-height: 35px;
-        color: #525f7f;
+        color: var(--lighter-color);
         margin: 80px 0;
     }
 
@@ -489,7 +508,7 @@ body {
 
 .contact-links span:after {
     content: "||";
-    color: #525f7f;
+    color: var(--lighter-color);
     margin: 0 30px;
 }
 
@@ -512,3 +531,4 @@ footer {
 }
 
 /* =============== END FOOTER =============== */
+
