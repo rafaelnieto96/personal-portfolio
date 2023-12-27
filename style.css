@@ -11,17 +11,17 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 10px;
-    
-    background: 
+
+    background:
         linear-gradient(to top, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
         linear-gradient(to bottom, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
         linear-gradient(to left, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
         linear-gradient(to right, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
         #000000;
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
 
-        /* background: linear-gradient(71deg, #0d1212, #3da077, #0d1212); */
-        
+    /* background: linear-gradient(71deg, #0d1212, #3da077, #0d1212); */
+
     background-size: 100% 20px, 100% 20px, 20px 100%, 20px 100%;
 
     background-position: top, bottom, left, right, center;
@@ -208,7 +208,7 @@ body {
     border-radius: 45px;
 }
 
-.project-card::after{
+.project-card::after {
     position: absolute;
     top: -3px;
     bottom: -3px;
@@ -297,6 +297,13 @@ body {
     background: #7795f8;
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08)
+}
+
+.white-bg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
 }
 
 /* =============== END PROJECTS =============== */
@@ -554,4 +561,3 @@ footer {
 }
 
 /* =============== END FOOTER =============== */
-
