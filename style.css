@@ -96,7 +96,7 @@ body {
     font-weight: 200;
     font-size: 1.3em;
     line-height: 40px;
-    color: var(--lighter-green);
+    color: var(--electric-green);
     margin: 80px 0;
 }
 
@@ -186,7 +186,7 @@ body {
     font-weight: 200;
     font-size: 1.3em;
     line-height: 40px;
-    color: var(--lighter-green);
+    color: var(--electric-green);
 }
 
 /* =============== END ABOUT ME =============== */
@@ -239,7 +239,7 @@ body {
     font-weight: 500;
     font-size: 1.8em;
     line-height: 38px;
-    color: var(--lighter-green);
+    color: var(--electric-green);
     margin-top: 0;
     margin-bottom: 35px;
 }
@@ -370,7 +370,7 @@ body {
     font-weight: 500;
     font-size: 1.8em;
     line-height: 38px;
-    color: var(--lighter-green);
+    color: var(--electric-green);
     margin-top: 0;
     margin-bottom: 35px;
 
@@ -422,7 +422,6 @@ body {
     font-family: 'Courier New', Courier, monospace;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
-    color: inherit;
 }
 
 .navbar a:hover {
@@ -454,7 +453,7 @@ body {
         font-weight: 200;
         font-size: 1.2em;
         line-height: 35px;
-        color: var(--lighter-green);
+        color: var(--electric-green);
         margin: 80px 0;
     }
 
@@ -524,11 +523,11 @@ body {
 }
 
 .contact-links a {
+    color: var(--electric-green);
     text-decoration: none;
     font-size: 20px;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
-    color: inherit;
 }
 
 .contact-links a:hover {
@@ -538,7 +537,7 @@ body {
 
 .contact-links span:after {
     content: "||";
-    color: var(--lighter-green);
+    color: var(--electric-green);
     margin: 0 30px;
 }
 
@@ -558,6 +557,7 @@ footer {
     text-align: center;
     font-family: Camphor, Open Sans, Segoe UI, sans-serif;
     font-size: .75em;
+    color: var(--electric-green);
 }
 
 /* =============== END FOOTER =============== */
