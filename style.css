@@ -4,8 +4,9 @@ html {
 
 :root {
     --electric-green: #00FF00;
-    --electric-blue: #7DF9FF;
     --lighter-green: #52fc52;
+    --electric-blue: #7DF9FF;
+    --darker-blue: #70b6e9;
 }
 
 body {
@@ -201,8 +202,8 @@ body {
 
 .output-lane a:hover,
 .principal-description a:hover {
-    /* ToDo: change the hover of the principal description */
-    text-decoration: underline;
+    color: var(--darker-blue);
+    text-decoration: none;
 }
 
 /* =============== END PRINCIPAL =============== */
