@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --electric-green: #00FF00;
-    --lighter-green: #7FFF7F;
+    --electric-blue: #7DF9FF;
+    --lighter-green: #52fc52;
 }
 
 body {
@@ -10,7 +15,7 @@ body {
     scroll-behavior: smooth;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 30px;
 
     background:
         linear-gradient(to top, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
@@ -119,18 +124,44 @@ body {
 }
 
 .terminal-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
     width: 12px;
+    cursor: pointer;
     height: 12px;
     border-radius: 50%;
     margin-right: 8px;
+}
+
+.terminal-button i {
+    color: black;
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .red {
     background-color: #ff5f56;
 }
 
+.red i:hover {
+    transform: rotate(45deg);
+}
+
 .yellow {
+    position: relative;
     background-color: #ffbd2e;
+}
+
+.yellow::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 70%;
+    height: 2px;
+    background-color: black;
+    transform: translateY(-50%);
 }
 
 .green {
@@ -139,6 +170,13 @@ body {
 
 .terminal-body {
     padding: 20px;
+    max-height: 1000px;
+    transition: max-height 0.5s ease;
+}
+
+.terminal-body.minimized {
+    max-height: 0;
+    padding: 20px 20px 0 20px;
 }
 
 .input-lane {
@@ -157,7 +195,7 @@ body {
 
 .output-lane a,
 .principal-description a {
-    color: lightblue;
+    color: var(--electric-blue);
     text-decoration: none;
 }
 
@@ -417,16 +455,21 @@ body {
 }
 
 .navbar a {
+    color: var(--electric-green);
     text-decoration: none;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    transition: transform 0.3s ease-in-out;
-    display: inline-block;
+    font-size: 18px;
+    padding-bottom: 0.15rem;
+
+    background: linear-gradient(var(--electric-green) 0 0), linear-gradient(var(--electric-green) 0 0);
+    background-size: .3em .1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: 0.3s linear, background-size 0.3s 0.2s linear;
 }
 
 .navbar a:hover {
-    text-decoration: none;
-    transform: scale(1.08);
+    background-size: 40% .1em;
+    background-position: 10% 100%, 90% 100%;
 }
 
 /* =============== END NAVBAR =============== */
@@ -435,8 +478,29 @@ body {
 /* =============== RESPONSIVE =============== */
 
 @media (max-width:767px) {
-    .navbar {
-        width: 75%;
+    body {
+        background:
+            linear-gradient(to top, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
+            linear-gradient(to bottom, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
+            linear-gradient(to left, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
+            linear-gradient(to right, var(--electric-green) 5%, transparent 5%, transparent 95%, var(--electric-green) 95%),
+            #000000;
+
+        background-repeat: no-repeat;
+
+        /* background: linear-gradient(71deg, #0d1212, #3da077, #0d1212); */
+
+        background-size: 100% 15px, 100% 15px, 15px 100%, 15px 100%;
+
+        background-position: top, bottom, left, right, center;
+    }
+
+    .navbar ul {
+        text-align: center;
+    }
+
+    .navbar a {
+        font-size: 80%;
     }
 
     .principal h2 {
