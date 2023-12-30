@@ -238,6 +238,7 @@ body {
 }
 
 .project-card {
+    height: 500px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -262,10 +263,13 @@ body {
 
 /* ToDo: adjust numbers */
 .project-card img {
-    width: 40%;
-    position: absolute !important;
+    position: absolute;
     top: 0;
     left: 0;
+    height: 500px;
+    width: auto;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
 }
 
 .project-content {
