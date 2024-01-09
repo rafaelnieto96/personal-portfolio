@@ -238,7 +238,7 @@ body {
 }
 
 .project-card {
-    height: 500px;
+    height: 400px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -266,10 +266,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 500px;
-    width: auto;
+    height: 400px;
+    width: 30%;
     border-top-left-radius: 45px;
     border-bottom-left-radius: 45px;
+    object-fit: cover;
 }
 
 .project-content {
@@ -415,7 +416,7 @@ body {
     line-height: 38px;
     color: var(--electric-green);
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 
 }
 
@@ -481,6 +482,56 @@ body {
 
 
 /* =============== RESPONSIVE =============== */
+
+@media (max-width:1000px) {
+    .project-card img {
+        display: none;
+    }
+
+    .project-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .project-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .project-skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .project-buttons {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .contact-links span:after {
+        content: "" !important;
+        margin: 0 !important;
+    }
+
+    .contact-links span:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
 
 @media (max-width:767px) {
     body {
@@ -557,17 +608,23 @@ body {
 }
 
 @media (max-width:500px) {
+
+    .project-card,
+    .project-card img {
+        height: 500px;
+    }
+
     .skill-card {
         width: 90%;
 
     }
 
     .skill-stars {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .skill-item span {
-        font-size: 0.95rem;
+        font-size: 0.90rem;
     }
 }
 
