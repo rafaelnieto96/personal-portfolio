@@ -335,12 +335,28 @@ body {
     box-sizing: border-box;
     background: #747fe0;
     color: #fff;
+    width: 100px;
+    text-align: center;
 }
 
 .project-link:hover {
     background: #7795f8;
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08)
+}
+
+.project-link i {
+    margin-right: 5px;
+}
+
+.demo-link {
+    color: #747fe0;
+    background-color: #fff;
+    border: 1px solid #747fe0;
+}
+
+.demo-link:hover {
+    background-color: rgb(236, 241, 255);
 }
 
 .white-bg {
