@@ -163,7 +163,7 @@ function drawNeuralConnections() {
 function globalPulseEffect() {
     // Add new pulse when mouse moves
     let mouseMoving = mouseX !== pmouseX || mouseY !== pmouseY;
-    if (mouseMoving && frameCount % 10 === 0) { // Only add every few frames to prevent too many
+    if (mouseMoving && frameCount % 30 === 0) {
         pulses.push({
             x: mouseX,
             y: mouseY,
