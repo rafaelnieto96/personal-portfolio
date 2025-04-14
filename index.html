@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Nieto Soto</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="images/user-icon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="ai-background.js"></script>
     <script src="script.js" defer></script>
 </head>
 
@@ -27,7 +29,8 @@
     <section class="principal">
         <h2>&gt; Rafael Nieto Soto<span class="blinking-rectangle"></span></h2>
         <div class="principal-description">
-            Passionate about logic and problem-solving, I enjoy creating solutions in software development.
+            Passionate about logic and problem-solving, I enjoy creating innovative solutions in software development.
+            With a focus on generative AI, I build intelligent applications to solve complex challenges.
             Check out my <a href="#projects">side-projects</a> below.
         </div>
 
@@ -44,8 +47,8 @@
                 <div class="output-lane">"Valencia, Spain"</div>
 
                 <div class="input-lane">&gt; Rafael.skills</div>
-                <div class="output-lane">["Symfony", "PHP", "Java", "Spring", "HTML", "CSS", "JavaScript", "Python",
-                    "Angular", "Vue", "React"]</div>
+                <div class="output-lane">["Python", "Langchain", "LangGraph", "Symfony", "Spring", "JavaScript",
+                    "Angular", "React"]</div>
 
                 <div class="input-lane">&gt; Rafael.contact</div>
                 <div class="output-lane">
@@ -62,7 +65,7 @@
                     (UPV)"</div>
 
                 <div class="input-lane">&gt; Rafael.interests</div>
-                <div class="output-lane">["Technology", "Reading", "Nature", "Lifting", "Swimming", "Cycling"]</div>
+                <div class="output-lane">["Technology", "Lifting", "Reading", "Nature", "Swimming", "Cycling"]</div>
 
                 <div class="input-lane">
                     &gt; <span class="blinking-cursor">_</span>
@@ -76,10 +79,10 @@
         <div class="about-text">
             <h2 id="about" class="section-title">About Me</h2>
             <p>
-                I'm a software developer born in Spain with an interest in technology since my early days. I spend most
-                of my time in the computer, either reading or programming. However, I also enjoy
-                maintaining an active lifestyle, engaging in physical activities like cycling or lifting in my free
-                time.</p>
+                I'm a software developer born in Spain with an interest in technology since my early days. With a strong
+                focus on generative AI and intelligent systems, I spend most of my time at the computer, either reading
+                or programming. However, I also enjoy maintaining an active lifestyle, engaging in physical activities
+                like cycling or lifting in my free time.</p>
         </div>
     </section>
 
@@ -133,8 +136,9 @@
                     <span class="project-skill">API Platform</span>
                 </div>
                 <div class="project-buttons">
-                    <a href="https://github.com/rafaelnieto96/TFG-dashboard" target="_blank"
-                        class="project-link">GitHub</a>
+                    <a href="https://github.com/rafaelnieto96/TFG-dashboard" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i>Code
+                    </a>
                     <!--   <a href="" class="project-link">Live</a>  -->
                 </div>
             </div>
@@ -148,15 +152,17 @@
             <div class="project-content">
                 <h3>Portfolio</h3>
                 <p>This project! Made with the 3 basic web development languages, the design of this portfolio aims to
-                    distance itself from the generic. At a glance, convey that it represents the profile of a developer.
+                    distance itself from the generic. It's designed to clearly show that it represents a developer's
+                    profile.
                 <div class="project-skills">
                     <span class="project-skill">HTML</span>
                     <span class="project-skill">CSS</span>
                     <span class="project-skill">Javascript</span>
                 </div>
                 <div class="project-buttons">
-                    <a href="https://github.com/rafaelnieto96/personal-portfolio" target="_blank"
-                        class="project-link">GitHub</a>
+                    <a href="https://github.com/rafaelnieto96/personal-portfolio" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i>Code
+                    </a>
                     <!--   <a href="" class="project-link">Live</a>  -->
                 </div>
             </div>
@@ -179,8 +185,9 @@
                     <span class="project-skill">Angular</span>
                 </div>
                 <div class="project-buttons">
-                    <a href="https://github.com/rafaelnieto96/gym-planning" target="_blank"
-                        class="project-link">GitHub</a>
+                    <a href="https://github.com/rafaelnieto96/gym-planning" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i>Code
+                    </a>
                     <!--   <a href="" class="project-link">Live</a>  -->
                 </div>
             </div>
@@ -239,15 +246,12 @@
                 <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                     <span>HTML</span>
-                    <div class="mt-5 d-flex justify-content-between align-items-center">
-                        <div class="skill-stars">
-                            <i class="fa fa-star star-color"></i>
-                            <i class="fa fa-star star-color"></i>
-                            <i class="fa fa-star star-color"></i>
-                            <i class="fa fa-star star-color"></i>
-                            <i class="fa fa-star star-color"></i>
-                        </div>
-
+                    <div class="skill-stars">
+                        <i class="fa fa-star star-color"></i>
+                        <i class="fa fa-star star-color"></i>
+                        <i class="fa fa-star star-color"></i>
+                        <i class="fa fa-star star-color"></i>
+                        <i class="fa fa-star star-color"></i>
                     </div>
                 </div>
 
@@ -373,13 +377,17 @@
     <section class="contact">
         <h2 id="contact" class="section-title">Contact Me</h2>
         <div class="contact-links">
-            <span><a href="https://www.linkedin.com/in/rafael-nieto-soto/" target="_blank">LinkedIn</a></span>
-            <span><a href="mailto:radikan.dev@gmail.com">radikan.dev@gmail.com</a></span>
-            <span><a href="https://github.com/rafaelnieto96" target="_blank">GitHub</a></span>
+            <a href="https://www.linkedin.com/in/rafael-nieto-soto/" target="_blank">
+                <i class="fab fa-linkedin"></i>LinkedIn
+            </a>
+            <a href="mailto:radikan.dev@gmail.com">
+                <i class="fas fa-envelope"></i>radikan.dev@gmail.com
+            </a>
+            <a href="https://github.com/rafaelnieto96" target="_blank">
+                <i class="fab fa-github"></i>GitHub
+            </a>
         </div>
     </section>
-
-    <script src="script.js" defer></script>
 
     <footer>
         <p>&copy; Rafael Nieto Soto. All rights reserved.</p>
