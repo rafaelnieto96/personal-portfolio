@@ -2,6 +2,7 @@ let neurons = [];
 let NUM_NEURONS = 40;
 let ACTIVATION_DISTANCE = 150;
 let MAX_CONNECTIONS = 5;
+let pulses = [];
 
 function calculateDensity() {
     const screenArea = window.innerWidth * window.innerHeight;
@@ -160,16 +161,36 @@ function drawNeuralConnections() {
 }
 
 function globalPulseEffect() {
-    noFill();
-    stroke(45, 80, 90, 25);
-    strokeWeight(0.6);
-    let maxRadius = min(width, height) * 0.25;
-    let pulseSize = ((frameCount * 2) % maxRadius);
-
-    // Only show the effect when the mouse moves
+    // Add new pulse when mouse moves
     let mouseMoving = mouseX !== pmouseX || mouseY !== pmouseY;
-    if (mouseMoving) {
-        ellipse(mouseX, mouseY, pulseSize, pulseSize);
+    if (mouseMoving && frameCount % 10 === 0) { // Only add every few frames to prevent too many
+        pulses.push({
+            x: mouseX,
+            y: mouseY,
+            size: 0,
+            alpha: 50,
+            maxSize: min(width, height) * 0.25
+        });
+    }
+
+    // Draw and update all pulses
+    noFill();
+    for (let i = pulses.length - 1; i >= 0; i--) {
+        let p = pulses[i];
+
+        // Draw pulse
+        stroke(45, 80, 90, p.alpha);
+        strokeWeight(0.6);
+        ellipse(p.x, p.y, p.size);
+
+        // Update pulse
+        p.size += 4;
+        p.alpha -= 0.8;
+
+        // Remove completed pulses
+        if (p.size > p.maxSize || p.alpha <= 0) {
+            pulses.splice(i, 1);
+        }
     }
 }
 
