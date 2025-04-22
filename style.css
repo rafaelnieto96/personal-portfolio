@@ -712,3 +712,16 @@ footer {
         justify-content: flex-start;
     }
 }
+
+.arsenal-link {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+.arsenal-link::after {
+    width: 100% !important;
+}
+
+.arsenal-link:hover {
+    color: var(--primary-light) !important;
+}
